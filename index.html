@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+    <title>Tom's Website Practice</title>
+    <link rel="icon" type="image/x-icon" href="images/cole.jpg">
+    <link href="styles/style.css" type="text/css" rel="stylesheet">
+    <meta name="description" content="A description of projects by Thomas Avant \
+    and how they went, what he has learned">
+    <meta name="keywords" content="programming, learning, Thomas, Avant">
+    <meta name="robots" content="noindex">
+    <meta name="author" content="Thomas Avant">
+    <meta name="expires" content="01/01/2030">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1 id="intro">Thomas Avant - Programming Projects</h1>
+    <!--<img src="images/cole.jpg" alt="Cole Palmer doing his celebration" height="200" width="200"/>-->
+    <img src="images/me.JPG" height="200" width="300"/>
+    <p>This page contains a list of all the programming projects that I am working on. Consider this a journey
+        through my aspirations and my struggles chipping away at becoming a better programmer. 
+    </p>
+    <!--<video src="videos/spain_flag.mp4" height="360" width="640" preload type="video/mp4" controls>
+    </video>-->
+    <div class="div">
+        <h2 id="contents">Contents</h2>
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#password">Password Storer</a></li>
+            <li><a href="#maze">Maze Generator</a></li>
+            <li><a href="#pwgen">Password Generator</a></li>
+            <!--<li><a href="password-storer.html#test">test<a></li>-->
+        </ul>
+        <br>
+    </div>
+    <hr>
+    <!-- Beginning of the password storer section-->
+    <div>
+        <h2 class="project" id="password">1<sup>st</sup> Project: Password Storer</h2>
+        <p>This is a project to <b> imitate popular password-storing applications </b> such as <cite>1Password&copy;</cite>. 
+            The idea is that a single password can be used to control access to a list of all the passwords associated with an account.
+            This necessitates a single password that is strong enough to prevent access to unwanted parties but simultaneously 
+            memorable enough for the user to remember itself. The project therefore had several requirements:
+        </p>
+        <ul>
+            <li>Have one long, unique password to gain access to other passwords</li>
+            <li>Be accessible and easy to use</li>
+            <li>Have extra functionality such as being able to search</li>
+        </ul>
+        <a href="password-storer.html">Link to project</a><br>
+        <a href="password-storer.html" target="_blank">Link to project (opens in a new window)</a>
+    </div>
+    <hr>
+    <!-- Beginning of the maze generator project-->
+    <h2 class="project" id="maze">2<sup>nd</sup> Project: Maze Generator and Solver</h2>
+    <figure>
+        <img src="images/maze.jpg" height="100" width="100"/>
+        <figcaption>A typical maze</figcaption>
+    </figure>
+    <p>This one is meant to generate a <strong>maze</strong> and then <em>solve</em> it.<br>This is done with the algorithm:</p>
+    <blockquote>
+        <p>For me, this was a very enjoyable project and I learned a great deal by working on it. Finding out about the algorithms used
+        was particularly interesting, especially coming from a mathematical background. - Thomas Avant</p>
+    </blockquote>
+    <p>As I later record in the project's repository <q>Things went wrong all the time!</q></p> 
+    <ol>
+        <li>Create a grid</li>
+        <li>Randomly make paths through the maze</li>
+        <li>Randomly pick a start and end square</li>
+        <li>Recursively find a path from the start square to the end square</li>
+    </ol>
+    <hr>
+    <h2 id="definitions">Some Important Definitions</h2>
+    <dl>
+        <dt>Maze</dt>
+        <dd>a network of paths and hedges designed as a puzzle through which one has to find a way.</dd>
+        <dt>Password</dt>
+        <dd>a secret word or phrase that must be used to gain admission to a place</dd>
+    </dl>
+    <hr>
+    <!-- Beginning of Password Generator Project -->
+    <h2 class="project" id="pwgen">3<sup>rd</sup> Project: Password Generator</h2>
+    <form action="submit.php" method="post">
+        <input type="radio" name="op1" value="one" /> Option 1
+        <input type="radio" name="op2" value="two" /> Option 2
+        <input type="checkbox" name="check" value="three" /> Agree
+        <fieldset>
+            <legend>Add in your password ideas</legend>
+        <p>Password:
+            <input type="text" name="Password" size="100" maxlength="100" required="required"/>
+            <label for="Password">LABEL</label>
+        </p>
+        <p>New Password:
+            <input type="password" name="pass2" size="50" maxlength="100" />
+        </p>
+        <label>Date for password: <input type="date" name="pwdate" /></label>
+        <label>Email please: <input type="email" name="email"/></label>
+        </fieldset>
+        <textarea name="reason" cols="50" rows="5" placeholder="What inspired you to get a new password?"></textarea> 
+        <br>
+        <select name="select" size="3">
+            <option value="vweak">Very Weak</option>
+            <option value="weak">Weak</option>
+            <option value="med">Medium</option>
+            <option value="strong" selected="selected">Strong</option>
+            <option value="vstrong">Very Strong</option>
+        </select>
+        <br>
+        <input type="file"/>
+        <input type="submit" value="Upload"/>
+        <input type="image" src="images/me.JPG" width="200" height="50"/>
+    </form>
+    <hr>
+    <h3>
+        <p>
+            Little text
+        </p>
+        Testing Child Selector</h3>
+    <h2 id="effort">Effort Spent</h2>
+    <table>
+
+        <thead>
+        <th scope="col" width="200">Project</th>
+        <th scope="col" width="100">Stages</th>
+        <th scope="col" width="100">Hours</th>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">Password Storer</th>
+            <td>10</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <th scope="row">Maze Generator</th>
+            <td>2</td>
+            <td>10</td>
+        </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h2 id="github">GitHub Page</h2>
+    <a href="https://github.com/Tjfa2001">Tom's GitHub&trade;</a>
+    <hr>
+    <h2>Contact Me</h2>
+    <a href="mailto:thomasavant@btinternet.com">Email me</a>
+    <br>
+    <!--<iframe width="500" height="500" src="https://app.outlier.ai/dashboard" frameborder="0"></iframe>-->
+    <!--<iframe width="500" height="500" src="https://www.youtube.com/embed/aSugSGCC12I"></iframe>-->
+</body>
+</html>
