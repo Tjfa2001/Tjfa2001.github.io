@@ -9,29 +9,35 @@
     <meta name="keywords" content="programming, learning, Thomas, Avant">
     <meta name="robots" content="noindex">
     <meta name="author" content="Thomas Avant">
-    <meta name="expires" content="01/01/2030">
+    <!--<meta name="expires" content="01/01/2030">-->
     <meta charset="UTF-8">
 </head>
 <body>
-    <h1 id="intro">Thomas Avant - Programming Projects</h1>
+    <h1>Thomas Avant - Programming Projects</h1>
+    <ul id="home">
+        <li class="home-item"><a href="#intro">Introduction</a></li>
+        <li class="home-item"><a href="#password">Password Storer</a></li>
+        <li class="home-item"><a href="#maze">Maze Generator</a></li>
+        <li class="home-item"><a href="#pwgen">Password Generator</a></li>
+        <li class="home-item"><a href="#web">Website Design</a></li>
+        <li class="home-item"><a href="#contact">Contact Me</a></li>
+    </ul>
+    <h2>Introduction</h2>
+    <div id="intro" style="overflow:auto; padding:10px; border-radius: 20px;">
+        <img src="images/me.JPG" height="150" width="225" style="float:right; overflow:auto; clear:left; padding:10px; border-radius:25px;"/>
+        <p>If you are reading this page, then you are either very, very lost on the internet (I'm sorry that you've ended up here) 
+            or you somehow know who I am and are interested in what I have programmed. In either case, welcome! Please grab yourself a 
+            nice cup of tea and take a look at what I've got to show you.</p>
+        
+        <p>This page contains a list of all the programming projects that I am working on, have worked on or
+             that I am intending to work on. I am a Software Engineer looking to improve on a variety of different disciplines. All 
+             work on this page is my own and I do not claim that it will be perfect.
+             </p>    
+    </div>
     <!--<img src="images/cole.jpg" alt="Cole Palmer doing his celebration" height="200" width="200"/>-->
-    <img src="images/me.JPG" height="200" width="300"/>
-    <p>This page contains a list of all the programming projects that I am working on. Consider this a journey
-        through my aspirations and my struggles chipping away at becoming a better programmer. 
-    </p>
+
     <!--<video src="videos/spain_flag.mp4" height="360" width="640" preload type="video/mp4" controls>
     </video>-->
-    <div class="div">
-        <h2 id="contents">Contents</h2>
-        <ul>
-            <li><a href="#intro">Introduction</a></li>
-            <li><a href="#password">Password Storer</a></li>
-            <li><a href="#maze">Maze Generator</a></li>
-            <li><a href="#pwgen">Password Generator</a></li>
-            <!--<li><a href="password-storer.html#test">test<a></li>-->
-        </ul>
-        <br>
-    </div>
     <hr>
     <!-- Beginning of the password storer section-->
     <div>
@@ -46,11 +52,12 @@
             <li>Be accessible and easy to use</li>
             <li>Have extra functionality such as being able to search</li>
         </ul>
-        <a href="password-storer.html">Link to project</a><br>
-        <a href="password-storer.html" target="_blank">Link to project (opens in a new window)</a>
+        <a href="projects/password-storer.html">Link to project</a><br>
+        <a href="projects/password-storer.html" target="_blank">Link to project (opens in a new window)</a>
     </div>
     <hr>
     <!-- Beginning of the maze generator project-->
+    <div>
     <h2 class="project" id="maze">2<sup>nd</sup> Project: Maze Generator and Solver</h2>
     <figure>
         <img src="images/maze.jpg" height="100" width="100"/>
@@ -62,12 +69,13 @@
         was particularly interesting, especially coming from a mathematical background. - Thomas Avant</p>
     </blockquote>
     <p>As I later record in the project's repository <q>Things went wrong all the time!</q></p> 
-    <ol>
+    <ol style="background-image :url('images/smile.jpg');">
         <li>Create a grid</li>
         <li>Randomly make paths through the maze</li>
         <li>Randomly pick a start and end square</li>
         <li>Recursively find a path from the start square to the end square</li>
     </ol>
+    </div>
     <hr>
     <h2 id="definitions">Some Important Definitions</h2>
     <dl>
@@ -140,7 +148,7 @@
     <h2 id="github">GitHub Page</h2>
     <a href="https://github.com/Tjfa2001">Tom's GitHub&trade;</a>
     <hr>
-    <h2>Contact Me</h2>
+    <h2 id="contact">Contact Me</h2>
     <a href="mailto:thomasavant@btinternet.com">Email me</a>
     <br>
     <!--<iframe width="500" height="500" src="https://app.outlier.ai/dashboard" frameborder="0"></iframe>-->
