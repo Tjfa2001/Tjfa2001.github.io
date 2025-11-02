@@ -11,22 +11,83 @@ body {
     font-style: normal;
 }
 
+header > p{
+    font-size:50px;
+}
+
 h1 {
-    color:rgb(21, 45, 161);
-    background-color: beige;
+    color:rgb(68, 3, 77);
+    background-color: rgb(238, 207, 233);
     font-weight: "bold";
     font-size:75px;
-    border: 10px solid rgb(32, 5, 99);
+    border: 10px solid rgb(68, 3, 77);
     text-align:center;
     font-family:'Quicksand';
+    border-radius:20px;
+    padding:10px;
+}
+
+pre{
+    text-align:center;
+    margin:0;
+}
+
+nav {
+    padding-top: 0%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+/* Links to projects in the navigation bar */
+nav > ul > li {
+    list-style-type: none;
+    width: 20%;
+    height: 50px;
+    background-color: darkgrey;
+    text-align:center;
+    line-height:50px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+}
+
+/* Holding list for projects in the navigation bar */
+nav > ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: gainsboro;
+    align-items: center;
+    margin-top: 0;
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 h2 {
     background-color:rgb(238, 207, 233);
     color: rgb(98, 53, 77);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0;
+    padding:10px;
+    border-radius:10px;
+    padding-left: 3vw;
 }
 
+h2[id="contents"]{
+    padding:10px;
+    padding-left: 3vw;
+    font-size:50px;
+    border: 10px solid rgb(68, 3, 77);
+    border-radius: 10px;
+    color: rgb(68, 3, 77);
+    position:relative;
+    z-index:1;
+}
 
 h2[class="project"]:hover{
     background-color: rgb(175, 43, 177);
@@ -46,6 +107,12 @@ h2[class="project"]:hover{
 a{
     color:rgb(30, 0, 100);
     text-decoration: none;
+}
+
+li a{
+    display:block;
+    width: 95%;
+    height:95%;
 }
 
 a:active{
