@@ -11,7 +11,6 @@ header > p{
 }
 
 h1 {
-<<<<<<< HEAD
     color:rgb(68, 3, 77);
     background-color: rgb(238, 207, 233);
     font-weight: "bold";
@@ -62,19 +61,6 @@ nav > ul {
     width: 100%;
     margin: 0;
     padding: 0;
-=======
-    color:rgb(75, 17, 76);
-    width:90%;
-    background-color: beige;
-    border-radius: 10px;
-    font-weight: "bold";
-    font-size:60px;
-    border: 10px solid rgb(75, 17, 76);
-    text-align:center;
-    font-family:'Quicksand';
-    margin: 5px 0px 1px 0px;
-    margin:auto;
->>>>>>> 42aa828e638c687f4303a96c38f308ddcbdb9166
 }
 
 h2 {
@@ -82,7 +68,6 @@ h2 {
     padding: 25px;
     border-radius:15px;
     color: rgb(98, 53, 77);
-<<<<<<< HEAD
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 0;
     padding:10px;
@@ -101,13 +86,6 @@ h2[id="contents"]{
     z-index:1;
 }
 
-=======
-    display:inline-block;
-    margin-left:5%;
-    font-family:'Quicksand'
-}
-
->>>>>>> 42aa828e638c687f4303a96c38f308ddcbdb9166
 h2[class="project"]:hover{
     background-color: rgb(175, 43, 177);
 }
