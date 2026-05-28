@@ -90,12 +90,6 @@ h2[class="project"]:hover{
     background-color: rgb(175, 43, 177);
 }
 
-#intro {
-    width:80vw;
-    margin:auto;
-    background-color:cornsilk;
-}
-
 #contents {
     text-align: justify;
 }
@@ -104,7 +98,7 @@ h2[class="project"]:hover{
     background-color: rgb(142, 77, 116);
     color:rgb(246, 182, 230);
     font-size:"25px";
-    width:75%;
+    width:100%;
     margin: auto;
     margin-left:5%;
     border:5px solid rgb(68, 3, 77);
@@ -165,7 +159,7 @@ ul {
 }
 
 div{
-    width:90%;
+    width:100%;
 }
 
 p {
