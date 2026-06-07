@@ -6,13 +6,31 @@
     font-style: normal;
 }
 
-header > p{
+:root {
+    --heading-bg-colour: rgb(238, 207, 233);
+    --heading-text-colour: rgb(68, 3, 77);
+    --heading-border: 10px solid var(--heading-text-colour);
+}
+
+.heading {
+    color:var(--heading-text-colour);
+    background-color: var(--heading-bg-colour);
+    border: var(--heading-border);
+    display: grid;
+    grid: 1fr 1fr 1fr 1fr;
+}
+
+.thumbnail_image {
+    border-radius: 10px;
+}
+
+header > p {
     font-size:50px;
 }
 
 h1 {
-    color:rgb(68, 3, 77);
-    background-color: rgb(238, 207, 233);
+    color:var(--heading-text-colour);
+    background-color: var(--heading-bg-colour);
     font-weight: "bold";
     font-size:75px;
     border: 10px solid rgb(68, 3, 77);
