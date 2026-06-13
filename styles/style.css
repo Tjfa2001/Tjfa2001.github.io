@@ -9,35 +9,61 @@
 :root {
     --heading-bg-colour: rgb(238, 207, 233);
     --heading-text-colour: rgb(68, 3, 77);
-    --heading-border: 10px solid var(--heading-text-colour);
+    --heading-border: 0.2vw solid var(--heading-text-colour);
+    --basic-text-size: 1.5vmax;
 }
 
-.heading {
+.non_selectable {
+    user-select: none;
+}
+
+/*==================
+      Headings
+==================*/
+
+.page__heading {
     color:var(--heading-text-colour);
     background-color: var(--heading-bg-colour);
     border: var(--heading-border);
+    font-weight: "bold";
+
     display: grid;
-    grid: 1fr 1fr 1fr 1fr;
+    grid: 1fr 0 / 1fr 5fr;
+    align-items: center;
+    text-align:center;
+    border-radius:20px;
+    padding:10px;
+    font-family:'Quicksand';
+    font-size: 3vw;
+    margin-top: 0;
+    
+    z-index: 1;
+}
+
+.heading {
+    color: var(--heading-text-colour);
+    background-color: var(--heading-bg-colour);
+    border: var(--heading-border);
+    font-size: 3vmax;
+    text-align: center;
+}
+
+.heading-overlay {
+    position: relative;
+    z-index: 1;
+}
+
+.project__heading {
+    background-color: rgb(142, 77, 116);
+    color:rgb(246, 182, 230);
+    font-size:25px;
+    border: var(--heading-border);
 }
 
 .thumbnail_image {
     border-radius: 10px;
-}
-
-header > p {
-    font-size:50px;
-}
-
-h1 {
-    color:var(--heading-text-colour);
-    background-color: var(--heading-bg-colour);
-    font-weight: "bold";
-    font-size:75px;
-    border: 10px solid rgb(68, 3, 77);
-    text-align:center;
-    font-family:'Quicksand';
-    border-radius:20px;
-    padding:10px;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 pre{
@@ -82,44 +108,12 @@ nav > ul {
 }
 
 h2 {
-    background-color:rgb(238, 207, 233);
     padding: 25px;
     border-radius:15px;
-    color: rgb(98, 53, 77);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 0;
     padding:10px;
-    border-radius:10px;
     padding-left: 3vw;
-}
-
-h2[id="contents"]{
-    padding:10px;
-    padding-left: 3vw;
-    font-size:50px;
-    border: 10px solid rgb(68, 3, 77);
-    border-radius: 10px;
-    color: rgb(68, 3, 77);
-    position:relative;
-    z-index:1;
-}
-
-h2[class="project"]:hover{
-    background-color: rgb(175, 43, 177);
-}
-
-#contents {
-    text-align: justify;
-}
-
-.project {
-    background-color: rgb(142, 77, 116);
-    color:rgb(246, 182, 230);
-    font-size:"25px";
-    width:100%;
-    margin: auto;
-    margin-left:5%;
-    border:5px solid rgb(68, 3, 77);
 }
 
 #home {
@@ -180,11 +174,11 @@ div{
     width:100%;
 }
 
-p {
-    color:rgb(39, 9, 116) !important;
-    text-decoration:blink;
-    margin-right:10px;
-    margin-left:10px;
+.text {
+    color:rgb(24, 12, 57) !important;
+    margin-right:5vw;
+    margin-left:5vw;
+    font-size: var(--basic-text-size);
 }
 
 #github {
