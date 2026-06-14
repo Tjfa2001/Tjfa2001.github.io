@@ -90,13 +90,15 @@ pre{
 /* Links to projects in the navigation bar */
 
 .navigation__item {
+    display: flex;
+
     list-style-type: none;
     width: 20vw;
     height: 5vh;
     background-color: var(--secondary-colour);
-    text-align:center;
-    justify-content:center;
-    line-height:50px;
+    text-align: center;
+    justify-content: center;
+    
     border-radius: 10px;
     font-size: var(--basic-text-size);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -111,11 +113,18 @@ pre{
     justify-content: space-around;
     background-color: rgb(227, 192, 231);
     align-items: center;
-    margin-top: 0;
-    height: 100px;
+    margin-top: 100px;
     width: 100%;
     margin: 0;
     padding: 0;
+}
+
+.navigation__link {
+    display: flex;
+    height:100%;
+    width:100%;
+    align-items: center;
+    justify-content: center;
 }
 
 h2 {
