@@ -37,7 +37,6 @@
     font-family:'Quicksand';
     font-size: 3vw;
     margin-top: 0;
-    
     z-index: 1;
 }
 
@@ -47,6 +46,10 @@
     border: var(--heading-border);
     font-size: 3vmax;
     text-align: center;
+    padding: 25px;
+    font-weight:"bold";
+    font-family:'Quicksand';
+    margin-bottom: 0;
 }
 
 .heading-overlay {
@@ -57,8 +60,10 @@
 .project__heading {
     background-color: rgb(142, 77, 116);
     color: var(--third-colour);
-    font-size:25px;
     border: var(--heading-border);
+    border-radius: 15px;
+    padding-left: 3vw;
+    margin-bottom: 0;
 }
 
 /*====================
@@ -82,41 +87,58 @@ pre{
 
 .navigation {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: auto;
+    background-color: var(--third-colour);
+    justify-content: center;
+    margin-top: -1.5vh;
+    padding-top: 1.5vh;
+    border-radius: 0px 0px 0px 10px;
+}
+
+/* Holding list for projects in the navigation bar */
+.navigation__list {
+
+    /* Alignment */
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    align-items: center;
+    align-content: space-around;
+    margin-top: 50px;
+    height: 15vh;
+    width: 90%;
+    margin: 0;
+    margin-top: -1.5vh;
+    padding: 0;
+    padding-top: 1.5vh;
+
+    /* Appearance */
+
 }
 
 /* Links to projects in the navigation bar */
 
 .navigation__item {
-    display: flex;
-
-    list-style-type: none;
-    width: 20vw;
-    height: 5vh;
-    background-color: var(--secondary-colour);
-    text-align: center;
-    justify-content: center;
     
+    /* Appearance */
+    list-style-type: none;
     border-radius: 10px;
     font-size: var(--basic-text-size);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    align-items: center;
-}
+    background-color: var(--secondary-colour);
+    border: var(--heading-border);
 
-/* Holding list for projects in the navigation bar */
-.navigation__list {
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: rgb(227, 192, 231);
+    /* Alignment */
+    display: flex;
+    text-align: center;
     align-items: center;
-    margin-top: 100px;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    width: 20vw;
+    margin: auto;
+    height: 5vh;
+
 }
 
 .navigation__link {
@@ -125,8 +147,14 @@ pre{
     width:100%;
     align-items: center;
     justify-content: center;
+    margin: 10px 10px 10px 10px;
+    line-height: 1;
 }
 
+/*=====================
+
+=====================*/
+/*
 h2 {
     padding: 25px;
     border-radius:15px;
@@ -134,7 +162,7 @@ h2 {
     margin-bottom: 0;
     padding:10px;
     padding-left: 3vw;
-}
+}*/
 
 #home {
     width:90%;
