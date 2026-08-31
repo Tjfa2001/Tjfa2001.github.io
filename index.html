@@ -9,25 +9,26 @@
     <meta name="keywords" content="programming, learning, Thomas, Avant">
     <meta name="robots" content="noindex">
     <meta name="author" content="Thomas Avant">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
 </head>
 
 <body>
     <header>
         <h1 class="page__heading heading non_selectable">
-            <img src="images/me.JPG" class="thumbnail_image" height=100vh width=100vw/>
+            <img src="images/me.JPG" class="thumbnail_image"/>
 <pre><em>Thomas Avant's</em>
 <b>Programming Projects</b>
 </pre>
         </h1>
         <p class="text">
-            This page contains a list of some of the programming projects that I am working on. My experience with coding is rather limited, but I hope to create some
+            This page contains a list of some of the programming projects that I am working on. My experience with coding is incipient, but I hope to create some
             exciting projects here that will be useful and inspire me on my journey.
         </p>
-        <p class="text" class="text">
+        <p class="text">
             There are projects that use Java, SQL, Python, HTML, CSS, JavaScript, Postgres amongst other technologies and I am continually looking for ways
             to improve my skills and learn new things. Whilst there have been struggles, I would generally say that I have enjoyed the process and am keen
-            to work on many different things over the coming months 
+            to work on many different things over the coming months
         </p>
     </header>
 
@@ -38,8 +39,9 @@
             <li class="navigation__item"><a class="navigation__link" href="#password">Password Storer</a></li>
             <li class="navigation__item"><a class="navigation__link" href="#maze">Maze Generator</a></li>
             <li class="navigation__item"><a class="navigation__link" href="#pwgen">Password Generator</a></li>
-            <li class="navigation__item"><a class="navigation__link">Shopping Tracker</a></li>
-            <li class="navigation__item"><a class="navigation__link">Project Website</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#shoptrack">Shopping Tracker</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#projweb">Project Website</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#designpat">Design Patterns</a></li>
         </ul>
     </nav>
     <br>
@@ -47,15 +49,15 @@
     <!-- Beginning of the password storer section-->
     <section>
         <h2 class="project__heading heading" id="password">1<sup>st</sup> Project: Password Storer</h2>
-        <p class="text">This is a project to <b> imitate popular password-storing applications </b> such as <cite>1Password&copy;</cite>. 
+        <p class="text">This is a project to <b> imitate popular password-storing applications </b> such as <cite>1Password&copy;</cite>.
             The idea is that a single password can be used to control access to a list of all the passwords associated with an account.
-            This necessitates a single password that is strong enough to prevent access to unwanted parties but simultaneously 
+            This necessitates a single password that is strong enough to prevent access to unwanted parties but simultaneously
             memorable enough for the user to remember itself. The project therefore had several requirements:
         </p>
-        <ul>
-            <li>Have one long, unique password to gain access to other passwords</li>
-            <li>Be accessible and easy to use</li>
-            <li>Have extra functionality such as being able to search</li>
+        <ul class="text">
+            <li class="list--indented">Have one long, unique password to gain access to other passwords</li>
+            <li class="list--indented">Be accessible and easy to use</li>
+            <li class="list--indented">Have extra functionality such as being able to search</li>
         </ul>
         <a href="projects/password-storer.html">Link to project</a><br>
         <a href="projects/password-storer.html" target="_blank">Link to project (opens in a new window)</a>
@@ -65,23 +67,24 @@
     <section>
         <h2 class="project__heading heading" id="maze">2<sup>nd</sup> Project: Maze Generator and Solver</h2>
         <figure>
-            <img src="images/maze.jpg" height="100" width="100"/>
+            <img class="thumbnail_image" src="images/maze.jpg" />
         <figcaption>A typical maze</figcaption>
     </figure>
-    <p>This one is meant to generate a <strong>maze</strong> and then <em>solve</em> it.<br>This is done with the algorithm:</p>
+    <p class="text">This one is meant to generate a <strong>maze</strong> and then <em>solve</em> it.<br>This is done with the algorithm:</p>
     <blockquote>
-        <p>For me, this was a very enjoyable project and I learned a great deal by working on it. Finding out about the algorithms used
-        was particularly interesting, especially coming from a mathematical background. - Thomas Avant</p>
+        <p class="text quote">For me, this was a very enjoyable project and I learned a great deal by working on it. Finding out about the algorithms used
+        was particularly interesting, especially coming from a mathematical background. - <i>Thomas Avant</i></p>
     </blockquote>
-    <p>As I later record in the project's repository <q>Things went wrong all the time!</q></p> 
-    <ol>
-        <li>Create a grid</li>
-        <li>Randomly make paths through the maze</li>
-        <li>Randomly pick a start and end square</li>
-        <li>Recursively find a path from the start square to the end square</li>
+    <p class="text">As I later record in the project's repository <q>Things went wrong all the time!</q></p>
+    <ol class="text">
+        <li class="list--indented">Create a grid</li>
+        <li class="list--indented">Randomly make paths through the maze</li>
+        <li class="list--indented">Randomly pick a start and end square</li>
+        <li class="list--indented">Recursively find a path from the start square to the end square</li>
     </ol>
     </section>
     <hr>
+
     <!-- Definition Section -->
     <h2 id="definitions">Some Important Definitions</h2>
     <dl>
@@ -92,7 +95,7 @@
     </dl>
     <hr>
     <!-- Beginning of Password Generator Project -->
-    <h2 class="project" id="pwgen">3<sup>rd</sup> Project: Password Generator</h2>
+    <h2 class="project__heading heading" id="pwgen">3<sup>rd</sup> Project: Password Generator</h2>
     <form action="submit.php" method="post">
         <input type="radio" name="op1" value="one" /> Option 1
         <input type="radio" name="op2" value="two" /> Option 2
@@ -109,7 +112,7 @@
         <label>Date for password: <input type="date" name="pwdate" /></label>
         <label>Email please: <input type="email" name="email"/></label>
         </fieldset>
-        <textarea name="reason" cols="50" rows="5" placeholder="What inspired you to get a new password?"></textarea> 
+        <textarea name="reason" cols="50" rows="5" placeholder="What inspired you to get a new password?"></textarea>
         <br>
         <select name="select" size="3">
             <option value="vweak">Very Weak</option>
@@ -124,6 +127,14 @@
         <input type="image" src="images/me.JPG" width="200" height="50"/>
     </form>
     <hr>
+    <!-- Beginning of the Shopping Tracker -->
+    <h2 class="project__heading heading" id="shoptrack">4<sup>th</sup> Project: Shopping Tracker</h2>
+    <hr>
+    <!-- Beginning of the Project Website -->
+    <h2 class="project__heading heading" id="projweb">5<sup>th</sup> Project: Project Website</h2>
+    <hr>
+    <!-- Beginning of the Design Pattern project -->
+    <h2 class="project__heading heading" id="designpat">6<sup>th</sup> Project: Design Patterns</h2>
     <h3>
         <p>
             Little text
