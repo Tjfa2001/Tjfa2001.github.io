@@ -13,10 +13,18 @@
     src: url('../fonts/Inter.ttf') format('truetype');
 }
 
+/*==================
+   Page Variables
+==================*/
+
 :root {
-    --primary-colour: rgba(82, 9, 92, 0.74);
-    --secondary-colour: rgb(114, 56, 104);
-    --third-colour: rgb(216, 175, 206);
+    --primary-colour: rgba(82, 9, 92, 0.74); /* Dark Purple */
+    --secondary-colour: rgb(114, 56, 104); /* Dark Pink */
+    --third-colour: rgb(216, 175, 206); /* Light Pink */
+
+    --plain-white-colour: rgb(255, 255, 255);
+    --link-colour: color: rgb(30, 0, 100);
+
     --heading-border: 0.2vw solid var(--primary-colour);
     --basic-text-size: 1.5vmax;
 }
@@ -38,14 +46,13 @@ body {
     color: var(--primary-colour);
     background-color: var(--secondary-colour);
     border: var(--heading-border);
-    font-weight: 'bold';
+    font-weight: bold;
     display: grid;
     grid: 1fr 0 / 1fr 5fr;
     align-items: center;
     text-align: center;
     border-radius: 20px;
     padding: 10px;
-    font-family: 'Inter';
     margin-top: 0;
     z-index: 1;
     font-size: clamp(1.5rem, 3vw, 3rem);
@@ -58,8 +65,7 @@ body {
     font-size: 3vmax;
     text-align: center;
     padding: 25px;
-    font-weight: 'bold';
-    font-family: 'Inter';
+    font-weight: bold;
     margin-bottom: 0;
 }
 
@@ -79,7 +85,7 @@ body {
 }
 
 .project__heading {
-    background-color: rgb(142, 77, 116);
+    background-color: var(--primary-colour);
     color: var(--third-colour);
     border: var(--heading-border);
     border-radius: 15px;
@@ -93,15 +99,28 @@ body {
 
 .thumbnail_image {
     border-radius: 10px;
-    height: 100px;
-    width: 100px;
+    height: clamp(100px, 5vh, 10rem);
+    width: auto;
     grid-column: 1;
     grid-row: 1;
 }
 
-pre {
-    text-align: center;
-    margin: 0;
+.image--floating-left {
+    float: left;
+    height: clamp(200px, 5vh, 10rem);
+    width: auto;
+    padding-left: 5vw;
+    margin: 1rem;
+}
+
+.image--full-page {
+    width: clamp(10px, 80%, 700px);
+    display: block;
+    margin: 2vh auto;
+}
+
+.below-image--clear {
+    clear: left;
 }
 
 /*=====================
@@ -125,28 +144,23 @@ pre {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    /*justify-content: flex-start;*/
+
     justify-content: center;
     gap: 1rem;
     align-items: center;
     align-content: space-around;
-    margin-top: 50px;
     min-height: 15vh;
     width: 90%;
-    margin: 0 auto;
-    margin-top: -1.5vh;
     padding: 1.5vh 0;
 }
 
 /* Links to projects in the navigation bar */
-
 .navigation__item {
     /* Appearance */
     flex: 1 1 150px;
     list-style-type: none;
     border-radius: 10px;
     font-size: var(--basic-text-size);
-    font-family: 'Inter';
     background-color: var(--secondary-colour);
     border: var(--heading-border);
 
@@ -158,11 +172,11 @@ pre {
 
 .navigation__item:hover {
     background-color: var(--primary-colour);
-    color: white;
+    color: var(--plain-white-colour);
 }
 
 .navigation__item:hover .navigation__link {
-    color: white;
+    color: var(--plain-white-colour);
 }
 
 .navigation__link {
@@ -180,53 +194,9 @@ pre {
 
 =====================*/
 
-#home {
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin: 0px 0px 0px 0px;
-    background-color: rgb(191, 165, 193);
-    padding: 10px 0px 10px 0px;
-    color: rgb(206, 178, 208);
-    overflow: hidden;
-    margin: auto;
-    border-radius: 0px 0px 10px 10px;
-}
-
-.home-item {
-    float: left;
-    font-family: Inter;
-    font-weight: bold;
-    margin: 0px 5px 0px 5px;
-    background-color: rgb(149, 109, 169);
-    color: azure;
-    padding: 20px;
-    border: 4px solid rgb(75, 17, 76);
-    border-radius: 10px;
-}
-
-.home-item:hover {
-    background-color: rgb(211, 160, 230);
-}
-
-a {
-    color: rgb(30, 0, 100);
+.page__link {
     text-decoration: none;
-}
-
-li a {
-    display: block;
-    width: 95%;
-    height: 95%;
-}
-
-a:active {
-    color: rgb(30, 0, 100);
-}
-
-a:hover {
-    color: rgb(30, 0, 100);
+    color: var(--link-colour);
 }
 
 ul {
@@ -234,17 +204,10 @@ ul {
     font-size: 20px;
 }
 
-div {
-    width: 100%;
-}
-
 .text {
     color: rgb(24, 12, 57) !important;
     margin: 0 5vw 0 5vw;
-    /*margin-right: 5vw;
-    margin-left: 5vw;*/
     padding: 1rem;
-    font-family: 'Inter';
     font-size: var(--basic-text-size);
 }
 
@@ -254,7 +217,7 @@ div {
 }
 
 .quote {
-    background-color: white;
+    background-color: var(--plain-white-colour);
     text-align: center;
 }
 
@@ -263,10 +226,6 @@ div {
     font-size: 25px;
     border: 5px solid rgba(10, 10, 10, 1);
     color: rgb(0, 0, 0);
-}
-
-#effort {
-    color: blue;
 }
 
 li {
