@@ -13,6 +13,7 @@
         <meta name="author" content="Thomas Avant" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="UTF-8" />
+        <script src="scripts/index.js" async></script>
     </head>
 
     <body>
@@ -42,7 +43,7 @@
         <nav class="navigation">
             <ul class="navigation__list">
                 <li class="navigation__item">
-                    <a class="navigation__link" href="#intro">Introduction</a>
+                    <a id="a" class="navigation__link" href="#intro">Introduction</a>
                 </li>
                 <li class="navigation__item">
                     <a class="navigation__link" href="#password">Password Storer</a>
@@ -102,10 +103,13 @@
                 designed a GUI is exactly like making a website and it is very easy to get it wrong.
                 You can see a picture here of how it ended up below.
             </p>
+
             <img
                 class="image--full-page"
+                id="pic_gallery"
                 alt="My Password Storer Project GUI"
                 src="images/pass_manager.png" />
+            <button id="button--gallery" style="display: block">Press Me</button>
             <h3 class="heading">Related Links</h3>
             <div class="text">
                 <a class="page__link" href="projects/password-storer.html">Link to project</a><br />
@@ -121,8 +125,8 @@
                 2<sup>nd</sup> Project: Maze Generator and Solver
             </h2>
             <figure>
-                <img class="thumbnail_image" src="images/maze.jpg" />
-                <figcaption>A typical maze</figcaption>
+                <img class="image--full-page" src="images/maze.jpg" />
+                <figcaption class="caption--centred">A typical maze</figcaption>
             </figure>
             <p class="text">
                 This project was about generating a <strong>maze</strong> and then
@@ -162,47 +166,12 @@
         <h2 class="project__heading heading" id="pwgen">
             3<sup>rd</sup> Project: Password Generator
         </h2>
-        <form action="submit.php" method="post">
-            <input type="radio" name="op1" value="one" /> Option 1
-            <input type="radio" name="op2" value="two" /> Option 2
-            <input type="checkbox" name="check" value="three" /> Agree
-            <fieldset>
-                <legend>Add in your password ideas</legend>
-                <p>
-                    Password:
-                    <input
-                        type="text"
-                        name="Password"
-                        size="100"
-                        maxlength="100"
-                        required="required" />
-                    <label for="Password">LABEL</label>
-                </p>
-                <p>
-                    New Password:
-                    <input type="password" name="pass2" size="50" maxlength="100" />
-                </p>
-                <label>Date for password: <input type="date" name="pwdate" /></label>
-                <label>Email please: <input type="email" name="email" /></label>
-            </fieldset>
-            <textarea
-                name="reason"
-                cols="50"
-                rows="5"
-                placeholder="What inspired you to get a new password?"></textarea>
-            <br />
-            <select name="select" size="3">
-                <option value="vweak">Very Weak</option>
-                <option value="weak">Weak</option>
-                <option value="med">Medium</option>
-                <option value="strong" selected="selected">Strong</option>
-                <option value="vstrong">Very Strong</option>
-            </select>
-            <br />
-            <input type="file" />
-            <input type="submit" value="Upload" />
-            <input type="image" src="images/me.JPG" width="200" height="50" />
-        </form>
+        <p class="text">
+            The third project that I am exhibiting here is a very simple one that I completed very
+            early on. It tied in nicely with the Password Storer project which I would take up a few
+            months after this one. In short, I wanted to create a program or application that would
+            generate a password for the user that met a certain number of criteria.
+        </p>
         <hr />
         <!-- Beginning of the Shopping Tracker -->
         <h2 class="project__heading heading" id="shoptrack">
@@ -213,6 +182,30 @@
         <h2 class="project__heading heading" id="projweb">
             5<sup>th</sup> Project: Project Website
         </h2>
+        <p class="text">
+            This "project" was arguably one of the most difficult for me to work on. I knew on the
+            one hand that I wanted to make a professional website that I could use to display my
+            work on GitHub in a more exciting way, but I had no web development skills whatsoever.
+            You'll probably still agree that the resulting website could use some more polish and
+            expertise, but I am rather happy with what I was able to come up with in the end.
+            Despite it being something at first unfamiliar and uncomfortable, I would say that there
+            are certain aspects that are fun.
+        </p>
+        <p class="text">
+            There are many things that I have learned by encountering difficulties in the creation
+            of this page. The most common problems that I struggled with were:
+        </p>
+        <ul class="text">
+            <li class="list--indented">Making elements rescale when the window is rescaled</li>
+            <li class="list--indented">Placing elements where I want them to go</li>
+            <li class="list--indented">Making styling coherent and modular</li>
+        </ul>
+        <p class="text">
+            By working on this, I have discovered the <em>Prettier</em> code reformmatter, which has
+            made my page much more maintainable. Furthermore, learning about the BEM approach to CSS
+            has allowed me to build up a website much quicker than before and with greater
+            coherence.
+        </p>
         <hr />
         <!-- Beginning of the Design Pattern project -->
         <h2 class="project__heading heading" id="designpat">

@@ -231,3 +231,15 @@ ul {
 li {
     list-style-position: inside;
 }
+
+#button--gallery {
+    justify-self: center;
+}
+
+.caption--centred {
+    justify-self: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
